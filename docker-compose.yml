@@ -2,9 +2,8 @@ version: "3"
 
 services:
   minecraft:
-    image: ntec/minecraft-serverstarter
+    image: ngoldack/minecraft-serverstarter
     ports:
       - 25565:25565
     volumes:
-      - "./data:/minecraft"
-      - "./minecraft-setup-config.yaml:/minecraft/minecraft-setup-config.yaml"
+      - "./server-setup-config.yaml:/minecraft/server-setup-config.yaml"
