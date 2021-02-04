@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  minecraft:
+    image: ntec/minecraft-serverstarter
+    ports:
+      - 25565:25565
+    volumes:
+      - "./data:/minecraft"
+      - "./minecraft-setup-config.yaml:/minecraft/minecraft-setup-config.yaml"
